@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Knewave&family=Poppins:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",serif;
+    color: white;
+}
+.head{
+    background-color: black;
+    height: 450px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: -40px;
+    background-image: url(imges/header.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 10px 0px 0px rgb(1, 122, 82);
+}
+.buttonscrole{
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+    justify-content: space-between;
+    justify-content: right;
+    position: relative;
+    top: 60px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.bu1{
+    background-color: rgb(1, 161, 108);
+    border-radius: 5px;
+}
+
+.bu1:hover{
+    background-color: rgb(0, 99, 66);
+}
+.h3{
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+.t9sim{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+section .t9sim h3{
+    background-color: rgb(0, 99, 66);
+    position: relative;
+    top: 250px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.dwrat{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: 100%;
+    margin-top: 350px;
+}
+.dwrat h2{
+    text-align: right;
+    color: black;
+    margin-right: 130px;
+    position: relative;
+    top: 30px;
+    font-size: 28px;
+
+}
+.dwrat span img{
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    margin-left: 70px;
+    margin-top: 45px;
+    gap: 40px;
+}
+section .t9sim h3:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+.dwrat span img:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
