@@ -1,90 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Knewave&family=Poppins:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins",serif;
-    color: white;
-}
-.head{
-    background-color: black;
-    height: 450px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: -40px;
-    background-image: url(imges/header.jpeg);
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0px 10px 0px 0px rgb(1, 122, 82);
-}
-.buttonscrole{
-    display: flex;
-    gap: 40px;
-    margin-right: 20px;
-    justify-content: space-between;
-    justify-content: right;
-    position: relative;
-    top: 60px;
-}
-a{
-    text-decoration: none;
     color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    scroll-behavior: smooth;
 }
-.bu1{
-    background-color: rgb(1, 161, 108);
-    border-radius: 5px;
+body{
+    background-color: rgb(234, 228, 213);
+}
+header{
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+    position: fixed;
+    z-index: 99;
+}
+header nav a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 35px;
+}
+header h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 25px 0px;
 }
 
-.bu1:hover{
-    background-color: rgb(0, 99, 66);
-}
-.h3{
-    color: black;
-    text-align: center;
-    margin-top: 10%;
-}
-.t9sim{
+header nav{
+    padding: 40px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     gap: 40px;
 }
-section .t9sim h3{
-    background-color: rgb(0, 99, 66);
-    position: relative;
-    top: 250px;
-    padding: 20px;
-    border-radius: 8px;
+header h1:hover{
+    transition: 0.5s;
+    color: #ff9900;
+    transform: scale(1.1);
 }
-.dwrat{
-    background-color: rgba(0, 0, 0, 0.692);
+header nav a:hover{
+    transition: 0.3s;
+    color: #ff9900;
+    transform: scale(1.3);
+}
+section{
+    background-color:rgb(234, 228, 213);
+    width: 100%;
+    height: 800px;
+}
+section div h2{
+    color: rgb(0, 0, 0);
+    font-size: 58px;
+    background-color: rgb(255, 178, 44);
+    display: inline;
+}
+
+section span div h1{
+    color: #000;
+    font-size: 48px;
+}
+.img-box{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+section span{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 290px 250px;
+}
+
+section span div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px;
+}
+.img-box img,.img-box:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#about{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 400px;
+}
+#about .photo{
+    width: 450px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 1px rgb(58, 58, 58);
+    transition: 0.5s ease;
+    
+}
+#about .photo:hover{
+    transform: scale(1.1);
+}
+#about{
+    display: flex;
+    justify-content: center;
+    padding: 250px 0px;
+    gap: 100px;
+}
+#about .Aboutme h2{
+    color: #ff9900;
+    padding-bottom: 20px;
+    font-size: 48px;
+    background-color: #ffffff00;
+}
+#about .Aboutme p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #000;
+}
+button{
+    margin: 20px 0px;
+    width: 200px;
+    color: #000;
+    background-color: #ff9900;
+    border: 0px #000 solid;
+    height: 50px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+.button-downlond a{
+    text-decoration: none;
+    color: #000000;
+}
+.button-downlond:hover{
+    background-color:  rgb(234, 228, 213);
+    border: #000 2px solid;
+    transform: scale(1.055);
+}
+footer{
+    background-color: #242424;
     width: 100%;
     height: 100%;
-    margin-top: 350px;
+    padding: 5px 0px;
 }
-.dwrat h2{
-    text-align: right;
-    color: black;
-    margin-right: 130px;
-    position: relative;
-    top: 30px;
-    font-size: 28px;
+footer h1{
+    padding-top: 30px;
+    text-align: center;
+}
+footer span{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+footer span .button-contuct a{
+    text-decoration: none;
+}
+@media (max-width: 400px) {
+    header h1{
+        display: none;
+    }
+    header nav{
+        padding: 40px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    header{
+        background-color: #000;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0px;
+        position: fixed;
+        z-index: 99;
+    }
+    header nav a{
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0px 35px;
+    }
+    section div h2{
+        color: rgb(0, 0, 0);
+        font-size: 38px;
+        background-color: rgb(255, 178, 44);
+        display: inline;
+    }
+    .home{
+        position: relative;
+        top: 350px;
+        left: 50px;
 
-}
-.dwrat span img{
-    width: 300px;
-    height: 150px;
-    border-radius: 25px;
-    margin-left: 70px;
-    margin-top: 45px;
-    gap: 40px;
-}
-section .t9sim h3:hover{
-    transition: 0.3s ease;
-    transform: scale(1.1);
-}
-.dwrat span img:hover{
-    transition: 0.3s ease;
-    transform: scale(1.1);
+    }
+    section span div h1{
+    color: #000;
+    font-size: 28px;
+    }
+    .img-box{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid white;
+        flex-shrink: 0;
+        position: relative;
+        top: -100px;
+        left: 90px;
+        right: 90px;
+        bottom: 100px;
+    }
+    section span{
+    display: inline;
+    padding: 290px 20px;
+    }
+    #about .photo{
+        width: 250px;
+        height: 300px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 10px 1px rgb(58, 58, 58);
+        transition: 0.5s ease;
+        position: relative;
+        left: 50px;
+        right: 50px;
+        top: -110px;
+        
+    }
+    #about{
+        background-color:  rgb(234, 228, 213);
+        width: 100%;
+        height: 400px;
+    }
+    #about{
+        display: block;
+    }
+    #about .Aboutme h2{
+        padding-bottom: -20px;
+        font-size: 38px;
+        position: relative;
+        left: 90px;
+        right: 90px;
+        top: -70px; 
+    }
+    #about .Aboutme p{
+        font-size: 10px;
+        margin-top: -30px;
+        color: #000;
+    }
+    footer h1{
+        padding-top: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+    footer span{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+    }
+    footer span .button-contuct{
+        width: 100px;
+    }
+
+    
+
 }
